@@ -1,0 +1,54 @@
+{
+  "name": "@crossly/buyer-sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for the Crossly Buyer API — carts, orders, wishlists, offers and cashback for shoppers.",
+  "license": "MIT",
+  "homepage": "https://crossly.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crossly-dev/crossly-buyer-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crossly-dev/crossly-buyer-sdk/issues"
+  },
+  "keywords": [
+    "crossly",
+    "buyer",
+    "shopping",
+    "cart",
+    "wishlist",
+    "cashback",
+    "marketplace",
+    "sdk"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
